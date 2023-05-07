@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.white-line::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 105px;
+}
+.red-line::after {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 1px;
+  background-color: #bd2d2d;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+}
+
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+.wrapper-customers {
+  text-align: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title-customers {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 25px;
+}
+
+.subtitle-customers {
+  text-align: center;
+  padding-top: 15px;
+  font-family: "raleway";
+  font-size: 400;
+  font-weight: 18px;
+  color: rgba(134, 135, 139, 1);
+}
+.comments {
+  justify-content: space-between;
+  margin-top: 80px;
+  display: flex;
+  margin-bottom: 66px;
+}
+.item-comment {
+  max-width: 370px;
+  width: 100%;
+  height: 180px;
+
+  border: 1px solid rgba(226, 226, 226, 1);
+  background: rgba(226, 226, 226, 1);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.item-comment::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 30px solid rgba(226, 226, 226, 1);
+  position: absolute;
+  bottom: -20px;
+  left: 77px;
+}
+.item-comment p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  color: #86878b;
+  line-height: 24px;
+  padding: 0 20px;
+}
+.manager-wrapper {
+  margin-bottom: 68px;
+}
+.managers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.managers div {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+}
+.manager-bio {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 30px;
+}
+.manager-bio_name {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Open-Sans", sans-serif;
+  line-height: 64px;
+}
+.manager-bio_text {
+  position: absolute;
+  bottom: -30px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.axure {
+  background-image: url(./image.jpg);
+  position: relative;
+  z-index: 1;
+  height: 442px;
+}
+.axure::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.axure-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.axure-main_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 100px 0 100px 0;
+  position: relative;
+}
+
+.axure-main_subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 73px;
+}
+.axure-main_btn {
+  max-width: 370px;
+  width: 100%;
+  height: 58px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
